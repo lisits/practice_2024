@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Profile</title>
+</head>
+<body>
+  <h1>{{ user.name }}'s Profile</h1>
+  <p>{{ user.bio }}</p>
+  <img src="{{ url_for('static', filename=user.avatar.split('static/')[1]) }}" alt="Avatar">
+</body>
+</html>
